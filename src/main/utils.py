@@ -199,7 +199,7 @@ def load_dataset(dataset, class_number, mean, std, hyper_para):
 
 	elif(dataset=='umdface02'):
 		#change path files according to path on your device
-		folder_path = ''
+		folder_path = 'workspace/example/jylim/umdaa02-fd'
 		
 		test_data_path = folder_path+'test_data_user_'+str(class_number)+'.mat'
 		train_data_path = folder_path+'train_data_user_'+str(class_number)+'.mat'
