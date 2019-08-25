@@ -130,6 +130,13 @@ parser.add_argument(
 	help="choose one of the following \n-OC_CNN \n-OC_SVM_linear"
 )
 
+parser.add_argument(
+	"--gamma",
+	default=1/4096,
+	help="hyperparmeter gamma"
+)
+
+
 args = parser.parse_args()
 
 ### Parse the argument
@@ -164,6 +171,5 @@ elif(args.model_mode=='eval'):
 	# auc = choose_models(dataset, model_type, class_number, hyper_para)
 else:
 	raise argparse.ArgumentTypeError('model type can be either train or eval')
-
 
 print(auc)

@@ -57,6 +57,7 @@ parser.add_argument('--save_path', default='', type=str, metavar='PATH',
 parser.add_argument('--num_classes', default=99891, type=int,
                     metavar='N', help='number of classes (default: 99891)')
 
+
 def main():
     global args
     args = parser.parse_args()
